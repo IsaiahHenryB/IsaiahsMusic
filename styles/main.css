@@ -23,6 +23,10 @@ a{
 i{
     color: white;
 }
+h1 i,
+h2 i{
+    color: lime;
+}
 /* Mobile 1st */
 header{
     width: 100%;
@@ -80,7 +84,18 @@ nav{
     align-items: center;
     height: 200px;
     color: white;
+}
+.homepage{
     background:linear-gradient(0deg, rgba(255, 111, 0, 0.3), rgba(9, 5, 0, 0.91)), url("../img/mixer.jpg");
+    background-size: cover;
+}
+.aboutpage{
+    background:linear-gradient(0deg, rgba(255, 111, 0, 0.3), rgba(0, 0, 0, 0.864)), url("../img/about.jpg");
+    background-size: cover;
+}
+.musicpage{
+    background:linear-gradient(0deg, rgba(255, 111, 0, 0.3), rgba(9, 5, 0, 0.91)), url("../img/music.jpg");
+    
     background-size: cover;
 }
 .content{
