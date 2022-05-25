@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <script src="js/musicplayer.js" defer></script>
+    <script src="js/generator.js" defer></script>
+    <script src="https://kit.fontawesome.com/e6cba708a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="./img/logoicon.ico">
+    <title>Isaiah's Music: Songs</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navimg">
+                <img src="./img/Isaiahlogo.png" alt="Isaiah's music">
+                <i id="dropdown" class="fa-solid fa-arrow-down"></i>
+            </div>
+            <ul id="links" class="navbar-ul">
+                <a href="index.html"><li>HOME</li></a>
+                <a href="music.html"><li>MUSIC</li></a>
+                <a href="about.html"><li>ABOUT</li></a>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>MUSIC<pre></pre>Listen to Isaiah's Songs!</h1>
+        </div>
+    </header>
+    <div class="content">
+        <h2>Here Are All Of The Tracks</h2>
+        <div class="music">
+            <!-- This is the GUI of the Music Player -->
+            <div id="player">
+                <div>
+                    <h2>Select A Song From The List</h2>
+                </div>
+            <!-- This audio-player tag was created in musicplayer.js which was imported to style it and add basic functionality. -->
+                <audio-player
+                bar-width="5"
+                bar-gap="2"
+                autoplay></audio-player>
+            </div>
+        </div>
+        <!-- Form created to filter though the selected genres -->
+        <form action="#player" id="filter">
+            <h3>Filter By Genre</h3>
+            <select id="genre" name="genre" required>
+                <option value="" disabled selected>Select Genre</option>
+                <option value="all">All</option>
+                <!-- Seems a bit empty, huh? Have no fear for the rest of the options are populated by generator.js-->
+            </select>
+            <button type="submit">Select</button>
+        </form>
+        <div style="overflow-x: auto;">
+            <table class="songlist">
+                <tr>
+                    <th>Song Title</th>
+                    <th>Artist</th>
+                    <th>Genre</th>
+                </tr>
+                <!-- Seems empty, huh? Have no fear for this table is populated by generator.js-->
+            </table>
+        </div> 
+    </div>
+    <footer>
+        <p>&copy Isaiah Henry Front End SBA 2022</p>
+    </footer>
+</body>
+</html>

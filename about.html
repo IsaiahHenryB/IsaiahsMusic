@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/e6cba708a8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/logoicon.ico">
+    <title>Isaiah's Music: About</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navimg">
+                <img src="./img/Isaiahlogo.png" alt="Isaiah's music">
+                <i id="dropdown" class="fa-solid fa-arrow-down"></i>
+            </div>
+            <ul id="links" class="navbar-ul">
+                <a href="index.html"><li>HOME</li></a>
+                <a href="music.html"><li>MUSIC</li></a> 
+                <a href="about.html"><li>ABOUT</li></a>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>ABOUT<pre></pre>Learn More About This Website!</h1>
+        </div>
+    </header>
+    <div class="content">
+        <h2>So What's Up With This Website?</h2>
+        <p>If you're wondering what this site is about, you've come to the right place! Isaiah's Music is a website created by Isaiah Henry as a project to showcase front end web development fundamentals.</p>
+        <h2>So Where Does The Music Come From?</h2>
+        <p> All of the music on this site was made by Isaiah Henry using a digital audio workstation (DAW) call FL Studio. All songs that are on this website were made solely to be presented here.</p>
+        <h2>How Was This Website Made?</h2>
+        <p>This website was made using HTML5 <i class="fa-brands fa-html5"></i> CSS3 <i class="fa-brands fa-css3-alt"></i> and Javascript <i class="fa-brands fa-js-square"></i>
+        </p>
+        <p>The main functionality of this site comes from the <a href="music.html">MUSIC</a> page. That page uses Javascript to populate a table of songs based on a 2 dimnesional array containing the necessary properties that correspond to the songs that will be played. When you click on a row of the table, there is a Javascript function that replaces the music player with one with the corresponding attributes of the selected song. There is also a form that allows you to filter through the genres. There is a function connected to this form that prevents it from reloading the page and just replace the data in the table to display only the songs with the corresponding genre. There is also Javascript code that uses an api called Audio Context that makes it possible to make a custom "audio tag" with personalized controls.</p>
+        <h2>Any Other Questions? No Problem!</h2>
+        <form id="message" action="https://formsubmit.co/b5f954811189ea495fee3f741e1d6be3" method="POST">
+            <input type="hidden" name="_subject" value="Question">
+            <h2><pre>Send Me A Message</pre></h2>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Type Your Name Here" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Type Your Email Here" name="email" required>
+            <label for="message">Message</label>
+            <textarea class="textbox" name="message" placeholder="Type Your Message Here" id="" cols="30" rows="10" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy Isaiah Henry Front End SBA 2022</p>
+    </footer>
+</body>
+</html>
