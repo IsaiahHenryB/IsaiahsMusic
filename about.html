@@ -43,10 +43,12 @@
         <form id="message" action="https://formsubmit.co/b5f954811189ea495fee3f741e1d6be3" method="POST">
             <input type="hidden" name="_subject" value="Question">
             <h2><pre>Send Me A Message</pre></h2>
+            <!-- Adding regex validation for the name field to restrict numbers and silly characters but allowing hyphenated names -->
             <label for="name">Name</label>
-            <input type="text" placeholder="Type Your Name Here" name="name" required>
+            <input type="text" pattern="[a-zA-Z.\-_]+$" placeholder="Type Your Name Here" name="name" required>
+            <!-- Regex validation pattern for submitting the correct email format -->
             <label for="email">Email</label>
-            <input type="email" placeholder="Type Your Email Here" name="email" required>
+            <input type="email" pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}" placeholder="Type Your Email Here" name="email" required>
             <label for="message">Message</label>
             <textarea class="textbox" name="message" placeholder="Type Your Message Here" id="" cols="30" rows="10" required></textarea>
             <button type="submit">Send Message</button>
