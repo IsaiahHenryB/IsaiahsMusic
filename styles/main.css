@@ -147,6 +147,9 @@ p a:hover{
     object-fit: cover;
     border-radius: 4px;
 }
+#player{
+    max-width: 100%;
+}
 #player div{
     background-color: black;
     border-radius: 4px;
@@ -156,6 +159,7 @@ p a:hover{
     justify-content: center;
     align-items: center;
     padding: 10px;
+    overflow: hidden;
 }
 .songlist{
     border-radius: 4px;
@@ -194,6 +198,9 @@ select{
 }
 .textbox{
     height: 40px;
+    max-width: 100%;
+}
+.tablebox{
     max-width: 100%;
 }
 table{
