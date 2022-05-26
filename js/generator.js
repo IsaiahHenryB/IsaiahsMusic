@@ -67,7 +67,7 @@ const getGenres = (array = []) =>{
     }
     return res;
 };
-// Creating an array containing every unique genre from
+// Creating an array containing every unique genre from tracks array
 const genres = getGenres(tracks);
 // Creating objects to target necessary html elements
 const player = document.querySelector('.music')
@@ -78,7 +78,7 @@ const songs = document.querySelectorAll('.song');
 // Populating table in html for every track
 tracks.forEach(element => {
     songlist.innerHTML +=`
-    <tr class="song" title="${element.title}" onclick="switchSong(this)">
+    <tr href="#player" class="song" title="${element.title}" onclick="switchSong(this)">
     <td>${element.title}</td>
     <td>${element.artist}</td>
     <td>${element.genre}</td>
